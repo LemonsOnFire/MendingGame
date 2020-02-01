@@ -3,6 +3,8 @@
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
 /[Ll]ibrary/
+/[Aa]ssets/[Ll]ibrary/*[Cc]ache/
+/[Aa]ssets/[Ll]ibrary/*[Cc]ache.meta
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/

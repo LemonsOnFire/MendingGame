@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - PickUp
   - Empty
+  - Convo
+  - Patch
   layers:
   - Default
   - TransparentFX

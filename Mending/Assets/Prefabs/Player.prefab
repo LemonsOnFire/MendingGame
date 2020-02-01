@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrounded: 0
-  canDoubleJump: 1
+  allowedJumpCount: 1
   jumpCount: 0
 --- !u!114 &8424997060239172096
 MonoBehaviour:

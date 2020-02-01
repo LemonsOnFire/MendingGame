@@ -48,14 +48,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider other)
+    void OnCollisionEnter2D(Collision2D Other)
     {
-        if (other.gameObject.CompareTag("Pick Up"))
+        if (Other.gameObject.tag == "PickUp")
         {
-            other.gameObject.SetActive(false);
-            Debug.Log("Picked it up!");
+            Other.gameObject.SetActive(false);
+            Debug.Log("Test Dialogue Given");
         }
     }
-
 
 }

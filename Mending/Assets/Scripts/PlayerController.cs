@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    //Below focuses on avoiding infinity jump
+    //Below focuses on avoiding infinity jump but does jumps and double jumps
 
     public bool isGrounded;
     public bool canDoubleJump;
@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
         }
     }
-
+    //This lets us pick things up
     void OnCollisionEnter2D(Collision2D Other)
     {
         if (Other.gameObject.tag == "PickUp")

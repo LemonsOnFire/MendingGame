@@ -21,9 +21,17 @@ public class PlayerController : MonoBehaviour
 
         transform.position = position;
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded==true)
+        if (Input.GetKeyDown(KeyCode.Space) && (isGrounded==true || (canDoubleJump==true && jumpCount==1)))
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(Vector3.up * 6, ForceMode2D.Impulse);
+            gameObject.GetComponent<Rigidbody2D>().AddForce(Vector3.up * 8, ForceMode2D.Impulse);
+            if (isGrounded)
+            {
+                jumpCount = 1;
+            }
+            else
+            {
+                jumpCount = jumpCount+1;
+            }
         }
 
     }
@@ -31,6 +39,8 @@ public class PlayerController : MonoBehaviour
     //Below focuses on avoiding infinity jump
 
     public bool isGrounded;
+    public bool canDoubleJump;
+    public int jumpCount;
 
     void OnCollisionStay2D(Collision2D Other)
     {

@@ -57,6 +57,7 @@ public class PlayerController : MonoBehaviour
         if (Other.collider.gameObject.tag == "Ground")
         {
             isGrounded = true;
+			jumpCount = 1;
         }
 
         if (Other.collider.gameObject.tag == "Slide")

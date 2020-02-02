@@ -20,6 +20,6 @@ public class Level3OpenSaysMe : MonoBehaviour
     void OnCollisionEnter2D(Collision2D Other)
     {
         Debug.Log("Owie!");
-        SceneManager.LoadScene("Level3");
+        SceneManager.LoadScene("AfterLevel2");
     }
 }

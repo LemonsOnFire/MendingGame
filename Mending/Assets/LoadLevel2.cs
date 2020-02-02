@@ -20,6 +20,6 @@ public class LoadLevel2 : MonoBehaviour
     void OnCollisionEnter2D(Collision2D Other)
     {
         Debug.Log("Owie!");
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("AfterLevel1");
     }
 }

@@ -121,6 +121,49 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &352849963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 352849964}
+  - component: {fileID: 352849965}
+  m_Layer: 0
+  m_Name: MakeThingsLoad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &352849964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352849963}
+  m_LocalRotation: {x: -0, y: -0, z: -0.10122379, w: 0.9948637}
+  m_LocalPosition: {x: 146.98605, y: -67.83099, z: -1116.5537}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 885125351}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &352849965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352849963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e071714ae00754892ee29973ded3c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &550370344
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,6 +176,7 @@ GameObject:
   - component: {fileID: 550370348}
   - component: {fileID: 550370347}
   - component: {fileID: 550370346}
+  - component: {fileID: 550370349}
   m_Layer: 5
   m_Name: Exit Game Button
   m_TagString: Untagged
@@ -239,6 +283,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550370344}
   m_CullTransparentMesh: 0
+--- !u!114 &550370349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550370344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e3a88b928509242b2e6acc62f260f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExitButton: {fileID: 550370346}
 --- !u!1 &685729827
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +411,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1924601841}
+  - {fileID: 352849964}
   m_Father: {fileID: 1592264765}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 11.619}
@@ -453,7 +511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde3289154eec7d4ea2751f2126a825a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartButton: {fileID: 0}
+  StartButton: {fileID: 885125352}
 --- !u!1 &955498781
 GameObject:
   m_ObjectHideFlags: 0

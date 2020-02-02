@@ -2,17 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-
-public class StartGame : MonoBehaviour
+public class LoadLevel2 : MonoBehaviour
 {
-    public Button StartButton;
- 
     // Start is called before the first frame update
     void Start()
     {
-        StartButton.onClick.AddListener(NewGameStart);
+        
     }
 
     // Update is called once per frame
@@ -21,11 +17,9 @@ public class StartGame : MonoBehaviour
         
     }
 
-    void NewGameStart()
+    void OnCollisionEnter2D(Collision2D Other)
     {
-        Debug.Log("I work! I promise! Please don't throw me out.");
-        SceneManager.LoadScene("TutorialLevel");
+        Debug.Log("Owie!");
+        SceneManager.LoadScene("Level2");
     }
-
 }
-

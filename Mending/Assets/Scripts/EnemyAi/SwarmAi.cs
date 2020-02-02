@@ -23,6 +23,10 @@ public class SwarmAi : MonoBehaviour
         switch (sms)
         {
             case SwarmMovementState.Neutral:
+                if (Random.Range(0, 1000) < 1 )
+                {
+                    transform.Rotate(0, 180, 0);
+                }
                 break;
             case SwarmMovementState.Attacking:
                 break;

@@ -21,11 +21,15 @@ public class DepressionAi : MonoBehaviour
         switch (dms)
         {
             case DepressionMovementState.Neutral:
+                //trigger idle animation
                 break;
             case DepressionMovementState.Attacking:
+                //trigger pull in animation
+                //Code to pull things to you
                 break;
             default:
                 dms = DepressionMovementState.Neutral;
+                //trigger idle animation
                 break;
         }
     }
@@ -40,5 +44,16 @@ public class DepressionAi : MonoBehaviour
     {
         Debug.Log(collision.name + "entered the depression zone");
         dms = DepressionMovementState.Attacking;
+    }
+
+    public void OnTriggerStay2D(Collider2D collision)
+    {
+        collision.
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Debug.Log(collision.name + "exited the depression zone");
+        dms = DepressionMovementState.Neutral;
     }
 }

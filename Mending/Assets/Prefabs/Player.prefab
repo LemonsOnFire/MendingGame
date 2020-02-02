@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 8424997060239172097}
   - component: {fileID: 8424997060239172096}
   - component: {fileID: -2113420200337130020}
+  - component: {fileID: 5116414065883192423}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -230,7 +231,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {x: 0, y: 0}
-  mySpriteRenderer: {fileID: 0}
   isGrounded: 0
   canDoubleJump: 0
   jumpCount: 0
@@ -268,3 +268,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5116414065883192423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8424997060239172102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab8d01ba746063a4db48b99f6dd10929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded==true || (canDoubleJump==true && jumpCount==1)))
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(Vector3.up * 8, ForceMode2D.Impulse);
+            gameObject.GetComponent<Rigidbody2D>().AddForce(Vector3.up * 17, ForceMode2D.Impulse);
             if (isGrounded)
             {
                 jumpCount = 1;

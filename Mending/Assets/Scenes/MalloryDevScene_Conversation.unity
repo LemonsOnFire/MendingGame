@@ -290,6 +290,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Patch1
       objectReference: {fileID: 0}
+    - target: {fileID: 4376090794043328200, guid: b55697fbe7ba1f74e880681d3133d3b9,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -527477983
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376090794043328200, guid: b55697fbe7ba1f74e880681d3133d3b9,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5983139614893302433, guid: b55697fbe7ba1f74e880681d3133d3b9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -419,6 +429,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 294586634}
     m_Modifications:
+    - target: {fileID: 3986332066597646150, guid: 41edf197f22254d469c309967a7e8773,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -527477983
+      objectReference: {fileID: 0}
+    - target: {fileID: 3986332066597646150, guid: 41edf197f22254d469c309967a7e8773,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4485653843453511822, guid: 41edf197f22254d469c309967a7e8773,
         type: 3}
       propertyPath: m_Name
@@ -504,6 +524,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Patch3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104271349089335287, guid: 188f1ddb02608234daf614c03365667b,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -527477983
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104271349089335287, guid: 188f1ddb02608234daf614c03365667b,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6981061365580125086, guid: 188f1ddb02608234daf614c03365667b,
         type: 3}

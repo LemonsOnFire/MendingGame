@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         spawnPoint = transform.position;
-        Application.targetFrameRate = 30;
+        QualitySettings.vSyncCount = 0;//disabled
+        Application.targetFrameRate = 60;
     }
 
     // Update is called once per frame

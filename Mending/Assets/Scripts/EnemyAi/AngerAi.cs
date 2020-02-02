@@ -8,13 +8,16 @@ public class AngerAi : MonoBehaviour
     Vector2 startLocation;
     public int chargeDistance;
     public int patrolDistance;
+    bool playerInView;
     // Start is called before the first frame update
     void Start()
     {
         ams = AngerMovementState.Neutral;
         startLocation = transform.position;
+        playerInView = false;
+        inViewCount = 0;
     }
-
+    int inViewCount;
     // Update is called once per frame
     void Update()
     {
@@ -23,17 +26,21 @@ public class AngerAi : MonoBehaviour
         {
             case AngerMovementState.Neutral:
                 //Trigger Walk Animation
-                if (Random.Range(0, 1000) < 1 || !((position.x >= (startLocation.x - patrolDistance)) && (position.x <= (startLocation.x + patrolDistance))))
+                if (Random.Range(0, 1000) < 50 || !((position.x >= (startLocation.x - patrolDistance)) && (position.x <= (startLocation.x + patrolDistance))))
                 {
                     transform.Rotate(0, 180, 0);
                 }
                 break;
             case AngerMovementState.Alert:
                 //Trigger Alert Animation
+                if (playerInView && inViewCount >= 10)
+                {
+                    ams = AngerMovementState.Charging;
+                }
                 break;
             case AngerMovementState.Charging:
                 //Trigger Charge Animation
-
+                transform.position = new Vector3(transform.position.x + 0.11f, transform.position.y, transform.position.z);
                 break;
             default:
                 ams = AngerMovementState.Neutral;
@@ -45,17 +52,20 @@ public class AngerAi : MonoBehaviour
     {
         Debug.Log(collision.name + " entered charge zone");
         ams = AngerMovementState.Alert;
+        playerInView = true;
     }
-
+    
     public void OnTriggerStay2D(Collider2D collision)
     {
-        //Don't know yet
+        inViewCount = inViewCount + 1;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         Debug.Log(collision.name + " exited charge zone");
         ams = AngerMovementState.Neutral;
+        playerInView = false;
+        inViewCount = 0;
     }
 }
 

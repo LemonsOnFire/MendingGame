@@ -24,7 +24,7 @@ public class SwarmAi : MonoBehaviour
         {
             case SwarmMovementState.Neutral:
                 //Trigger patrolling Animation
-                if (Random.Range(0, 1000) < 1 || !((position.x >= (startLocation.x - patrolDistance)) && (position.x <= (startLocation.x + patrolDistance))))
+                if (Random.Range(0, 1000) < 50 || !((position.x >= (startLocation.x - patrolDistance)) && (position.x <= (startLocation.x + patrolDistance))))
                 {
                     transform.Rotate(0, 180, 0);
                 }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
     public Vector2 spawnPoint;
 
     // Start is called before the first frame update
@@ -16,7 +15,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         //This is all about moving and jumping
         float horizontal = Input.GetAxis("Horizontal");
         Vector2 position = transform.position;
@@ -24,24 +22,28 @@ public class PlayerController : MonoBehaviour
 
         transform.position = position;
 
-        if (Input.GetKeyDown(KeyCode.Space) && (isGrounded==true || (canDoubleJump==true && jumpCount==1)))
+        if (Input.GetKeyDown(KeyCode.Space) && (isGrounded == true || (canDoubleJump == true && jumpCount == 1)))
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 17, ForceMode2D.Impulse);
+            Rigidbody2D myRigidbody = gameObject.GetComponent<Rigidbody2D>();
             if (isGrounded)
             {
+                myRigidbody.AddForce(Vector2.up * 17, ForceMode2D.Impulse);
                 jumpCount = 1;
             }
             else
             {
-                jumpCount = jumpCount+1;
+                Vector3 newVelocity = myRigidbody.velocity;
+                newVelocity.y = 0;
+                myRigidbody.velocity = newVelocity;
+                gameObject.GetComponent<Rigidbody2D>().AddForce(Vector3.up * 12, ForceMode2D.Impulse);
+                jumpCount = jumpCount + 1;
             }
         }
 
         if (Input.GetKeyDown(KeyCode.Delete))
-	{
+        {
             Die();
         }
-
     }
 
     //Below focuses on avoiding infinity jump but does jumps and double jumps
@@ -55,6 +57,12 @@ public class PlayerController : MonoBehaviour
         if (Other.collider.gameObject.tag == "Ground")
         {
             isGrounded = true;
+        }
+
+        if (Other.collider.gameObject.tag == "Slide")
+        {
+            isGrounded = false;
+            jumpCount = 50;
         }
     }
 
@@ -79,6 +87,4 @@ public class PlayerController : MonoBehaviour
     {
         transform.position = spawnPoint;
     }
-
-
 }

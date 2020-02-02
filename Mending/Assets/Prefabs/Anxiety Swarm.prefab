@@ -51,6 +51,7 @@ MonoBehaviour:
   maxDistance: 0
   patrolDistance: 6
   spreadSeed: 0
+  positionChangeModifier: 1
 --- !u!70 &9118939679531265493
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -64,8 +65,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2, y: 0}
-  m_Size: {x: 22, y: 3}
+  m_Offset: {x: 5, y: 0}
+  m_Size: {x: 11, y: 3}
   m_Direction: 1
 --- !u!1001 &2904998848306748545
 PrefabInstance:

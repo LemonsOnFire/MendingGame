@@ -18,6 +18,7 @@ public class AngerAi : MonoBehaviour
         inViewCount = 0;
     }
     int inViewCount;
+    public int positionChangeModifier = 1;
     // Update is called once per frame
     void Update()
     {
@@ -26,10 +27,12 @@ public class AngerAi : MonoBehaviour
         {
             case AngerMovementState.Neutral:
                 //Trigger Walk Animation
-                if (Random.Range(0, 1000) < 50 || !((position.x >= (startLocation.x - patrolDistance)) && (position.x <= (startLocation.x + patrolDistance))))
+                if (Random.Range(0, 1000) < 30 || !((position.x >= (startLocation.x - patrolDistance)) && (position.x <= (startLocation.x + patrolDistance))))
                 {
                     transform.Rotate(0, 180, 0);
+                    positionChangeModifier = positionChangeModifier * (-1);
                 }
+                transform.position = new Vector3(transform.position.x + (0.2f*positionChangeModifier), transform.position.y, transform.position.z);
                 break;
             case AngerMovementState.Alert:
                 //Trigger Alert Animation
@@ -40,7 +43,7 @@ public class AngerAi : MonoBehaviour
                 break;
             case AngerMovementState.Charging:
                 //Trigger Charge Animation
-                transform.position = new Vector3(transform.position.x + 0.11f, transform.position.y, transform.position.z);
+                transform.position = new Vector3(transform.position.x + (0.95f * positionChangeModifier), transform.position.y, transform.position.z);
                 break;
             default:
                 ams = AngerMovementState.Neutral;

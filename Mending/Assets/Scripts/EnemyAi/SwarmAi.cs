@@ -16,6 +16,7 @@ public class SwarmAi : MonoBehaviour
         startLocation = transform.position;
     }
 
+    public int positionChangeModifier = 1;
     // Update is called once per frame
     void Update()
     {
@@ -24,13 +25,16 @@ public class SwarmAi : MonoBehaviour
         {
             case SwarmMovementState.Neutral:
                 //Trigger patrolling Animation
-                if (Random.Range(0, 1000) < 50 || !((position.x >= (startLocation.x - patrolDistance)) && (position.x <= (startLocation.x + patrolDistance))))
+                if (Random.Range(0, 1000) < 40 || !((position.x >= (startLocation.x - patrolDistance)) && (position.x <= (startLocation.x + patrolDistance))))
                 {
                     transform.Rotate(0, 180, 0);
+                    positionChangeModifier = positionChangeModifier * (-1);
                 }
+                transform.position = new Vector3(transform.position.x + (0.35f * positionChangeModifier), transform.position.y, transform.position.z);
                 break;
             case SwarmMovementState.Attacking:
                 //Trigger faster fly Animation
+                transform.position = new Vector3(transform.position.x + (0.8f * positionChangeModifier), transform.position.y, transform.position.z);
                 break;
             default:
                 sms = SwarmMovementState.Neutral;

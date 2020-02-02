@@ -24,7 +24,7 @@ public class StartGame : MonoBehaviour
     void NewGameStart()
     {
         Debug.Log("I work! I promise! Please don't throw me out.");
-        SceneManager.LoadScene("TutorialLevel");
+        SceneManager.LoadScene("OpeningCinema");
     }
 
 }

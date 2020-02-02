@@ -11,6 +11,8 @@ TagManager:
   - Patch
   - Needle
   - Space
+  - Slide
+  - Enemy
   layers:
   - Default
   - TransparentFX

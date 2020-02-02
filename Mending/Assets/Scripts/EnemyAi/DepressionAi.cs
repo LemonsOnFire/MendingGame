@@ -50,13 +50,10 @@ public class DepressionAi : MonoBehaviour
     public void OnTriggerStay2D(Collider2D collision)
     {
         //pull tward center
-        if(Mathf.Abs(collision.transform.position.x - transform.position.x) < pullDistance)
+        if((Mathf.Abs(collision.transform.position.x - transform.position.x) < pullDistance)|| (Mathf.Abs(collision.transform.position.y - transform.position.y) < pullDistance))
         {
             v2 = new Vector2(0, 0);
             
-        }else if (Mathf.Abs(collision.transform.position.y - transform.position.y) < pullDistance)
-        {
-
         }
     }
 

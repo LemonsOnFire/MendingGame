@@ -65,10 +65,19 @@ public class DialogueInventory : MonoBehaviour
                     }
                 }
             }
-                
-           // }
             Debug.Log("Nyahahaha! You found me!");
-
+        }else if (Other.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Ouch you hurt me!");
+            if (Slot1 == GameObject.Find("Empty1"))
+            {
+                //Player Die
+                //SceneManager
+            }
+            else
+            {
+                Slot1 = GameObject.Find("Empty1");
+            }
         }
     }
 }

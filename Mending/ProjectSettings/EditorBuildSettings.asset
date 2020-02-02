@@ -20,4 +20,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3.unity
     guid: 3b6665d208a70d641b0e45899a5a68e0
+  - enabled: 1
+    path: Assets/Scenes/TitleScene.unity
+    guid: ba74229d988dd8348a7105ac81169bd6
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: c00ef7008f6690e4c8f6dd0ee83f05bd
+  - enabled: 1
+    path: Assets/Scenes/OpeningCinema.unity
+    guid: fdd684c15fc12ca40b3c798978d6e02f
+  - enabled: 1
+    path: Assets/Scenes/Ya Done Goofed Kid.unity
+    guid: 6c00b5ca7efa5b8488967cd08ff16490
+  - enabled: 1
+    path: Assets/Scenes/YaDoneGoodKid.unity
+    guid: 99069a336fa52ac4bb04c45878a8f083
   m_configObjects: {}

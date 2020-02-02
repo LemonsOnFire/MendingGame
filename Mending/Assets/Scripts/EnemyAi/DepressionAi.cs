@@ -53,7 +53,6 @@ public class DepressionAi : MonoBehaviour
         if((Mathf.Abs(collision.transform.position.x - transform.position.x) < pullDistance)|| (Mathf.Abs(collision.transform.position.y - transform.position.y) < pullDistance))
         {
             v2 = new Vector2(0, 0);
-            
         }
     }
 

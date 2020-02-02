@@ -43,7 +43,7 @@ public class AngerAi : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.name + "entered charge zone");
+        Debug.Log(collision.name + " entered charge zone");
         ams = AngerMovementState.Alert;
     }
 
@@ -54,7 +54,7 @@ public class AngerAi : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log(collision.name + "exited charge zone");
+        Debug.Log(collision.name + " exited charge zone");
         ams = AngerMovementState.Neutral;
     }
 }

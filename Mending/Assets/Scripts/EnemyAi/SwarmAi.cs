@@ -41,7 +41,7 @@ public class SwarmAi : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.name + "entered the Swarm");
+        Debug.Log(collision.name + " entered the Swarm");
         sms = SwarmMovementState.Attacking;
     }
 
@@ -52,7 +52,7 @@ public class SwarmAi : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log(collision.name + "left the swarm");
+        Debug.Log(collision.name + " left the swarm");
         sms = SwarmMovementState.Neutral;
     }
 

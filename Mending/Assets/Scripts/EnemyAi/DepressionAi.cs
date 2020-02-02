@@ -41,18 +41,25 @@ public class DepressionAi : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.name + "entered the depression zone");
+        Debug.Log(collision.name + " entered the depression zone");
         dms = DepressionMovementState.Attacking;
     }
 
+    private Vector2 v2;
+    
     public void OnTriggerStay2D(Collider2D collision)
     {
         //pull tward center
+        if((Mathf.Abs(collision.transform.position.x - transform.position.x) < pullDistance)|| (Mathf.Abs(collision.transform.position.y - transform.position.y) < pullDistance))
+        {
+            v2 = new Vector2(0, 0);
+            
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log(collision.name + "exited the depression zone");
+        Debug.Log(collision.name + " exited the depression zone");
         dms = DepressionMovementState.Neutral;
     }
 }

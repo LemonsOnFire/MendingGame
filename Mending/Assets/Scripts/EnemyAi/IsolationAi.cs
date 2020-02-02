@@ -38,7 +38,7 @@ public class IsolationAi : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.name + "entered isolation");
+        Debug.Log(collision.name + " entered isolation");
         ims = IsolationMovementState.Attacking;
     }
 
@@ -49,7 +49,7 @@ public class IsolationAi : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log(collision.name + "no longer isolated");
+        Debug.Log(collision.name + " no longer isolated");
         ims = IsolationMovementState.Neutral;
     }
 

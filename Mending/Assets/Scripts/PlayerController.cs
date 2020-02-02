@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         spawnPoint = transform.position;
+        Application.targetFrameRate = 30;
     }
 
     // Update is called once per frame
@@ -18,13 +19,13 @@ public class PlayerController : MonoBehaviour
         //This is all about moving and jumping
         float horizontal = Input.GetAxis("Horizontal");
         Vector2 position = transform.position;
-        position.x = position.x + 0.1f * horizontal;
+        Rigidbody2D myRigidbody = gameObject.GetComponent<Rigidbody2D>();
+        myRigidbody.velocity = new Vector2(7f*horizontal, myRigidbody.velocity.y);
 
         transform.position = position;
 
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded == true || (canDoubleJump == true && jumpCount == 1)))
         {
-            Rigidbody2D myRigidbody = gameObject.GetComponent<Rigidbody2D>();
             if (isGrounded)
             {
                 myRigidbody.AddForce(Vector2.up * 17, ForceMode2D.Impulse);
@@ -57,6 +58,7 @@ public class PlayerController : MonoBehaviour
         if (Other.collider.gameObject.tag == "Ground")
         {
             isGrounded = true;
+			jumpCount = 1;
         }
 
         if (Other.collider.gameObject.tag == "Slide")

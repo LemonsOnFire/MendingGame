@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8635289863192415431}
   m_Layer: 0
   m_Name: Depression
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dms: 0
   startLocation: {x: 0, y: 0}
-  pullDistance: 0
+  pullDistance: 3
 --- !u!58 &8635289863192415431
 CircleCollider2D:
   m_ObjectHideFlags: 0

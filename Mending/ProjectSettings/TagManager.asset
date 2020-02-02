@@ -9,6 +9,7 @@ TagManager:
   - Empty
   - Convo
   - Patch
+  - Needle
   layers:
   - Default
   - TransparentFX

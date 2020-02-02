@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Vector2 spawnPoint;
+    public Vector2 spawnPoint;    
 
     // Start is called before the first frame update
     void Start()
@@ -86,5 +86,6 @@ public class PlayerController : MonoBehaviour
     public void Die()
     {
         transform.position = spawnPoint;
+        Debug.Log("Tis but a flesh wound!");
     }
 }

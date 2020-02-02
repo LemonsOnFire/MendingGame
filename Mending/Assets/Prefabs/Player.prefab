@@ -230,6 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {x: 0, y: 0}
+  mySpriteRenderer: {fileID: 0}
   isGrounded: 0
   canDoubleJump: 0
   jumpCount: 0

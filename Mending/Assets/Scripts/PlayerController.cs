@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
+    public Vector2 spawnPoint;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        spawnPoint = transform.position;
     }
 
     // Update is called once per frame
@@ -32,6 +35,11 @@ public class PlayerController : MonoBehaviour
             {
                 jumpCount = jumpCount+1;
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Delete))
+	{
+            Die();
         }
 
     }
@@ -66,5 +74,11 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Test Dialogue Given");
         }
     }
+
+    public void Die()
+    {
+        transform.position = spawnPoint;
+    }
+
 
 }

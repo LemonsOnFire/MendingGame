@@ -14,9 +14,7 @@ public class NeedleController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       /* m_LeftPosition = new Vector2(-4.0f, -2.5f);
-        m_MidPosition = new Vector2(0.0f, -2.5f);
-        m_RightPosition = new Vector2(3.0f, -2.5f); */
+   
     }
 
     // Update is called once per frame
@@ -57,21 +55,6 @@ public class NeedleController : MonoBehaviour
                 NeedleX = 0;
                 //m_MidPosition.x = m_XPosition;
                 transform.position = m_MidPosition;
-            }
-        }
-        else if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (NeedleX == -4)
-            {
-                Debug.Log("I'm on the left");
-            }
-            else if (NeedleX == 0)
-            {
-                Debug.Log("I'm in the middle");
-            }
-            else if (NeedleX == 3)
-            {
-                Debug.Log("I'm on the right");
             }
         }
       

@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AngerAi : MonoBehaviour
+public class SwarmAi : MonoBehaviour
 {
-    public AngerMovementState ams;
+    public SwarmMovementState sms;
     Vector2 startLocation;
     public int maxDistance;
     public int patrolDistance;
+    public int spreadSeed;
     // Start is called before the first frame update
     void Start()
     {
-        ams = AngerMovementState.Neutral;
+        sms = SwarmMovementState.Neutral;
         startLocation = transform.position;
     }
 
@@ -19,24 +20,21 @@ public class AngerAi : MonoBehaviour
     void Update()
     {
         Vector2 position = transform.position;
-        switch (ams)
+        switch (sms)
         {
-            case AngerMovementState.Neutral:
+            case SwarmMovementState.Neutral:
                 break;
-            case AngerMovementState.Alert:
-                break;
-            case AngerMovementState.Charging:
+            case SwarmMovementState.Attacking:
                 break;
             default:
-                ams = AngerMovementState.Neutral;
+                sms = SwarmMovementState.Neutral;
                 break;
         }
     }
-}
 
-public enum AngerMovementState
-{
-    Neutral,
-    Alert,
-    Charging
+    public enum SwarmMovementState
+    {
+        Neutral,
+        Attacking
+    }
 }

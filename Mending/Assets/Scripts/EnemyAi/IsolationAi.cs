@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AngerAi : MonoBehaviour
+public class IsolationAi : MonoBehaviour
 {
-    public AngerMovementState ams;
+    public IsolationMovementState ims;
     Vector2 startLocation;
     public int maxDistance;
     public int patrolDistance;
     // Start is called before the first frame update
     void Start()
     {
-        ams = AngerMovementState.Neutral;
+        ims = IsolationMovementState.Neutral;
         startLocation = transform.position;
     }
 
@@ -19,24 +19,21 @@ public class AngerAi : MonoBehaviour
     void Update()
     {
         Vector2 position = transform.position;
-        switch (ams)
+        switch (ims)
         {
-            case AngerMovementState.Neutral:
+            case IsolationMovementState.Neutral:
                 break;
-            case AngerMovementState.Alert:
-                break;
-            case AngerMovementState.Charging:
+            case IsolationMovementState.Attacking:
                 break;
             default:
-                ams = AngerMovementState.Neutral;
+                ims = IsolationMovementState.Neutral;
                 break;
         }
     }
-}
 
-public enum AngerMovementState
-{
-    Neutral,
-    Alert,
-    Charging
+    public enum IsolationMovementState
+    {
+        Neutral,
+        Attacking
+    }
 }

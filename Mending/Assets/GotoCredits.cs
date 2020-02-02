@@ -12,8 +12,12 @@ public class GotoCredits : MonoBehaviour
         timeLeft -= Time.deltaTime;
         if (timeLeft < 0)
         {
-            Debug.Log("TIMES UP");
-            SceneManager.LoadScene("Credits");
+            Debug.Log("LET'S GO");
+            CreditsRoll();
         }
+    }
+    void CreditsRoll()
+    {
+        SceneManager.LoadScene("Credits");
     }
 }

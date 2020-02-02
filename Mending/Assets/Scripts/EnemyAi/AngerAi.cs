@@ -22,14 +22,18 @@ public class AngerAi : MonoBehaviour
         switch (ams)
         {
             case AngerMovementState.Neutral:
+                //Trigger Walk Animation
                 if (Random.Range(0, 1000) < 1 || !((position.x >= (startLocation.x - patrolDistance)) && (position.x <= (startLocation.x + patrolDistance))))
                 {
                     transform.Rotate(0, 180, 0);
                 }
                 break;
             case AngerMovementState.Alert:
+                //Trigger Alert Animation
                 break;
             case AngerMovementState.Charging:
+                //Trigger Charge Animation
+
                 break;
             default:
                 ams = AngerMovementState.Neutral;
@@ -39,8 +43,19 @@ public class AngerAi : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.name + "entered the depression zone");
+        Debug.Log(collision.name + "entered charge zone");
         ams = AngerMovementState.Alert;
+    }
+
+    public void OnTriggerStay2D(Collider2D collision)
+    {
+        //Don't know yet
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Debug.Log(collision.name + "exited charge zone");
+        ams = AngerMovementState.Neutral;
     }
 }
 

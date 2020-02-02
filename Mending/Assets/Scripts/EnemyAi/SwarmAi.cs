@@ -23,17 +23,37 @@ public class SwarmAi : MonoBehaviour
         switch (sms)
         {
             case SwarmMovementState.Neutral:
-                if (Random.Range(0, 1000) < 1 )
+                //Trigger patrolling Animation
+                if (Random.Range(0, 1000) < 1 || !((position.x >= (startLocation.x - patrolDistance)) && (position.x <= (startLocation.x + patrolDistance))))
                 {
                     transform.Rotate(0, 180, 0);
                 }
                 break;
             case SwarmMovementState.Attacking:
+                //Trigger faster fly Animation
                 break;
             default:
                 sms = SwarmMovementState.Neutral;
+                //Trigger patrolling Animation
                 break;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(collision.name + "entered the Swarm");
+        sms = SwarmMovementState.Attacking;
+    }
+
+    public void OnTriggerStay2D(Collider2D collision)
+    {
+        //Don't know yet
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Debug.Log(collision.name + "left the swarm");
+        sms = SwarmMovementState.Neutral;
     }
 
     public enum SwarmMovementState

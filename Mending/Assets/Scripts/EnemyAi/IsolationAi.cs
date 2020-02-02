@@ -22,6 +22,11 @@ public class IsolationAi : MonoBehaviour
         switch (ims)
         {
             case IsolationMovementState.Neutral:
+                if (Random.Range(0, 1000) < 1 || !((position.x >= (startLocation.x - patrolDistance)) && (position.x <= (startLocation.x + patrolDistance))))
+                {
+                    transform.Rotate(0, 180, 0);
+                }
+
                 break;
             case IsolationMovementState.Attacking:
                 break;
@@ -29,6 +34,23 @@ public class IsolationAi : MonoBehaviour
                 ims = IsolationMovementState.Neutral;
                 break;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(collision.name + "entered isolation");
+        ims = IsolationMovementState.Attacking;
+    }
+
+    public void OnTriggerStay2D(Collider2D collision)
+    {
+        //Don't know yet
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Debug.Log(collision.name + "no longer isolated");
+        ims = IsolationMovementState.Neutral;
     }
 
     public enum IsolationMovementState

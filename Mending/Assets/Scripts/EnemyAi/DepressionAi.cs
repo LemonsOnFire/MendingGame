@@ -25,7 +25,6 @@ public class DepressionAi : MonoBehaviour
                 break;
             case DepressionMovementState.Attacking:
                 //trigger pull in animation
-                //Code to pull things to you
                 break;
             default:
                 dms = DepressionMovementState.Neutral;
@@ -48,7 +47,7 @@ public class DepressionAi : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D collision)
     {
-        collision.
+        //pull tward center
     }
 
     private void OnTriggerExit2D(Collider2D collision)

@@ -128,7 +128,7 @@ MonoBehaviour:
   ams: 0
   chargeDistance: 0
   patrolDistance: 8
-  positionChangeModifier: 1
+  positionChangeModifier: -1
 --- !u!61 &6581468843185516048
 BoxCollider2D:
   m_ObjectHideFlags: 0

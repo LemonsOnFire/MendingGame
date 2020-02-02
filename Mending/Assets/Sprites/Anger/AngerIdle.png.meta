@@ -1,0 +1,727 @@
+fileFormatVersion: 2
+guid: fb70a0027690d7d489d86c21d134c448
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4241748517628320200
+    second: AngerIdle_0
+  - first:
+      213: -5280334305032402794
+    second: AngerIdle_1
+  - first:
+      213: -6286546909670830199
+    second: AngerIdle_2
+  - first:
+      213: 5313431052645129768
+    second: AngerIdle_3
+  - first:
+      213: -5737097496304392558
+    second: AngerIdle_4
+  - first:
+      213: 739335506211577810
+    second: AngerIdle_5
+  - first:
+      213: 915504811394861114
+    second: AngerIdle_6
+  - first:
+      213: -1770844173584226721
+    second: AngerIdle_7
+  - first:
+      213: -23171892565305039
+    second: AngerIdle_8
+  - first:
+      213: 6009447235014802102
+    second: AngerIdle_9
+  - first:
+      213: 636513624428396787
+    second: AngerIdle_10
+  - first:
+      213: -4808312126199789962
+    second: AngerIdle_11
+  - first:
+      213: 1467355990127761088
+    second: AngerIdle_12
+  - first:
+      213: -941967756008884222
+    second: AngerIdle_13
+  - first:
+      213: -1464947450246415701
+    second: AngerIdle_14
+  - first:
+      213: -5874166989258401339
+    second: AngerIdle_15
+  - first:
+      213: -8475867528349199390
+    second: AngerIdle_16
+  - first:
+      213: 6813070783976820177
+    second: AngerIdle_17
+  - first:
+      213: 599768475732600926
+    second: AngerIdle_18
+  - first:
+      213: 1930966786878576104
+    second: AngerIdle_19
+  - first:
+      213: -3060989978990116407
+    second: AngerIdle_20
+  - first:
+      213: 884898329969700018
+    second: AngerIdle_21
+  - first:
+      213: 1847040070450949562
+    second: AngerIdle_22
+  - first:
+      213: 6590966399928731764
+    second: AngerIdle_23
+  - first:
+      213: -8868580534907343977
+    second: AngerIdle_24
+  - first:
+      213: 5188439081935386485
+    second: AngerIdle_25
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 405
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AngerIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2430
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c996c39dc7bdda30800000000000000
+      internalID: 4241748517628320200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_1
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 2430
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6980c3d0deb78b6b0800000000000000
+      internalID: -5280334305032402794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_2
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 2430
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f8d39a4e2b1c8a0800000000000000
+      internalID: -6286546909670830199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_3
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 2430
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e517ff3691db940800000000000000
+      internalID: 5313431052645129768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2025
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2966efa393cb160b0800000000000000
+      internalID: -5737097496304392558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_5
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 2025
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df1399c9b5a24a00800000000000000
+      internalID: 739335506211577810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_6
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 2025
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a380a5186c684bc00800000000000000
+      internalID: 915504811394861114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_7
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 2025
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5621f04b92bc67e0800000000000000
+      internalID: -1770844173584226721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1620
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1391fd6594dadaff0800000000000000
+      internalID: -23171892565305039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_9
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1620
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bab28bbb68d56350800000000000000
+      internalID: 6009447235014802102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_10
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1620
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f040ced4c955d800800000000000000
+      internalID: 636513624428396787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_11
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1620
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67688a4c891754db0800000000000000
+      internalID: -4808312126199789962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1215
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c65b96af781d5410800000000000000
+      internalID: 1467355990127761088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_13
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1215
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208f73111557de2f0800000000000000
+      internalID: -941967756008884222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_14
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1215
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baab27d3e067babe0800000000000000
+      internalID: -1464947450246415701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_15
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1215
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c95de5fe34ca7ea0800000000000000
+      internalID: -5874166989258401339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 810
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e35a79d36baf5a80800000000000000
+      internalID: -8475867528349199390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_17
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 810
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ddc784e7c3ec8e50800000000000000
+      internalID: 6813070783976820177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_18
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 810
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58e48f304ec25800800000000000000
+      internalID: 599768475732600926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_19
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 810
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e599fcdf0c2cca10800000000000000
+      internalID: 1930966786878576104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 405
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c18349f4dd2585d0800000000000000
+      internalID: -3060989978990116407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_21
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 405
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc2e2cb75ac74c00800000000000000
+      internalID: 884898329969700018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_22
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 405
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd2425782102a910800000000000000
+      internalID: 1847040070450949562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_23
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 405
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47889423501d77b50800000000000000
+      internalID: 6590966399928731764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b67e2cdf87ce480800000000000000
+      internalID: -8868580534907343977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngerIdle_25
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 0
+        width: 405
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57733810bd9010840800000000000000
+      internalID: 5188439081935386485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

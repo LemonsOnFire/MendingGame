@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GotoCredits : MonoBehaviour
 {
-    float timeLeft = 7.0f;
+    float timeLeft = 10.0f;
 
     void Update()
     {

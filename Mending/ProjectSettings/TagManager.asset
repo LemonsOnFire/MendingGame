@@ -10,6 +10,7 @@ TagManager:
   - Convo
   - Patch
   - Needle
+  - Space
   layers:
   - Default
   - TransparentFX

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -46,6 +47,15 @@ public class PlayerController : MonoBehaviour
         {
             Die();
         }
+        if (Input.GetKeyDown(KeyCode.K))
+        {//last scene
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {//next scene
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
     }
 
     //Below focuses on avoiding infinity jump but does jumps and double jumps

@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - PickUp
+  - Empty
+  - Convo
+  - Patch
+  - Needle
+  - Space
+  - Slide
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -40,4 +49,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Layer 1
+    uniqueID: 4017061289
+    locked: 0
+  - name: Layer 2
+    uniqueID: 135437287
+    locked: 0
+  - name: Layer 3
+    uniqueID: 3767489313
+    locked: 0
+  - name: Layer 4
+    uniqueID: 497036663
     locked: 0
